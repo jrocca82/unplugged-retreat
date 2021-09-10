@@ -224,17 +224,19 @@ footer .social-icons{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 2.75rem;
 }
 
-.social-imgs{
+footer .social-icons p{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20%;
   background-color: #527158;
+  font-size: 1rem;
   border-radius: 50%;
-  padding: 1rem 0;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 /*============================
@@ -309,7 +311,7 @@ aside .form input{
 
 .features i {
 	font-size: 3.75em;
-        margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 /*------Reviews--------*/
@@ -558,11 +560,11 @@ input[type=button] {
     align-items: center;
     flex-flow: column;
     margin: 5rem 0;
-    width: 49%;
+    width: 26%;
   }
 
   footer .social {
-    width: 49%;
+    width: 32%;
   }
 
   .social-imgs{
