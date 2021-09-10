@@ -341,15 +341,49 @@ aside .form input{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 50px 0;
+  margin: 0;
+  background-color: #527158;
+  width: 100%;
+}
+
+.mission .content-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 89%;
+  padding: 4em 0;
+}
+
+.map-container figure{
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+
+.map-container iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .contact-section {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 4em 0;
+  background-color: #2a423a;
+}
+
+.contact-section .content-wrapper {
+  display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
-  margin: 50px 0;
   width: 89%;
 }
 
@@ -363,6 +397,7 @@ aside .form input{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .faqs .content-wrapper {
@@ -502,10 +537,6 @@ input[type=button] {
   h4 {
     font-size: 1.5rem;
   }
-
-  figure {
-
-  }
   /*Header Styles*/
   header figure{
     width: 50%;
@@ -618,28 +649,37 @@ input[type=button] {
   /*======================
   --------About Page--------
   ===========================*/
+  h1,
+  h2 {
+    font-size: 2.25rem;
+    font-weight: normal;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
 
   .mission-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 20px
-      }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px
+  }
 
-      .mission-content p {
-        width: 45%;
-      }
+  .mission-content p {
+    width: 45%;
+  }
 
-      .contact-section .content-wrapper h2 {
-        width: 80%;
-      }
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
 
-      .contact-info {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        width: 100%;
-      }
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
 
 
   /*===========================
@@ -749,6 +789,18 @@ input[type=button] {
   /*======================
   --------About Page--------
   ===========================*/
+  h1,
+  h2 {
+    font-size: 3rem;
+  }
+
+  h4 {
+    font-size: 1.67rem;
+  }
+
+  p{
+    font-size: 1.125rem;
+  }
 
   .mission-content {
         display: flex;
@@ -757,15 +809,15 @@ input[type=button] {
         padding-top: 20px
       }
 
-      .mission-content p {
+  .mission-content p {
         width: 45%;
       }
 
-      .contact-section .content-wrapper h2 {
+  .contact-section .content-wrapper h2 {
         width: 80%;
       }
 
-      .contact-info {
+  .contact-info {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
