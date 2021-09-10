@@ -307,18 +307,9 @@ aside .form input{
   text-align: center;
 }
 
-.features-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 3.125rem 0 2.1875rem 0;
-}
-
-.features-img img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40%;
+.features i {
+	font-size: 3.75em;
+        margin-bottom: 40px;
 }
 
 /*------Reviews--------*/
@@ -624,10 +615,6 @@ input[type=button] {
     margin: auto 2rem;
   }
 
-  .features-img img {
-    width: 50%;
-  }
-
 
   /*--------Reviews-------*/
   .reviews .content-wrapper {
@@ -765,20 +752,6 @@ input[type=button] {
 .features p {
   font-size: 1.125rem;
   margin: 2rem;
-}
-
-.features-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 3.125rem 0 2.1875rem 0;
-}
-
-.features-img img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40%;
 }
 
   /*--------Reviews-------*/
