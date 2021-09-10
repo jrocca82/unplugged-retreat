@@ -86,59 +86,61 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-   /* General Styles */
-   html {
-     font-size: 16px;
-   }
-
-   body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    background-color: #202322;
-    color: white;
-   }
-
-   ul,
-   ol {
-     list-style: none;
-   }
-
-   a {
-     color: #e2e3ed;
-    text-decoration: none;
-   }
-
-   h1{
-     font-family: 'Poppins', sans-serif;
-     font-size: 3.75em;
-   }
-
-   h3,
-   h4 {
-     font-family: 'Poppins', sans-serif;
-     font-size:1.875em;
-   }
-
-   p {
-     font-size: 1.175em;
-     line-height: 1.5em;
-   }
-
-   img {
-
-   }
-
-   figure {
-
-   }
-
-   address {
-     font-style: normal;
-   }
-
 /*===========================
  --Base Header - Footer Styles--
  =============================*/
+ /* General Styles */
+ html {
+   font-size: 16px;
+ }
+
+ body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  background-color: #202322;
+  color: white;
+ }
+
+ ul,
+ ol {
+   list-style: none;
+ }
+
+ a {
+   color: #e2e3ed;
+  text-decoration: none;
+ }
+
+ h1{
+   font-family: 'Poppins', sans-serif;
+   font-size: 2.25em;
+   font-weight: normal;
+ }
+
+ h3,
+ h4 {
+   font-family: 'Poppins', sans-serif;
+   font-size: 1.125rem;
+   font-weight: normal;
+ }
+
+ p {
+   font-size: 0.875rem;
+   line-height: 1.5em;
+ }
+
+ img {
+   width: 100%;
+ }
+
+ figure {
+   margin: 0;
+ }
+
+ address {
+   font-style: normal;
+ }
+
 header,
 footer {
   display: flex;
@@ -148,9 +150,6 @@ footer {
 }
 
 /*Header Styles*/
-header {
-  background-color: #202322;
-}
 header .content-wrapper {
   display: flex;
   justify-content: center;
@@ -158,6 +157,9 @@ header .content-wrapper {
   flex-flow: row wrap;
   margin: 0;
   width: 100%;
+}
+header figure {
+  width: 62%;
 }
 
 .header-divide{
@@ -173,7 +175,6 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   width: 100%;
-  background-color: #202322;
 }
 
 header nav ul {
@@ -206,21 +207,34 @@ footer .contact {
   margin: 3em 0 0 0;
 }
 
-footer h4{
-  font-size: 1.125rem;
-  font-weight: normal;
-}
-
-footer p{
-  font-size: 0.875rem;
-}
-
-
 footer .copyright {
   margin: 1.25em 0;
   width: 100%;
   text-align: center;
   margin: 0;
+}
+
+footer .social{
+  display: flex;
+  flex-flow: column;
+  width: 58%;
+}
+
+footer .social-icons{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: 2.75rem;
+}
+
+.social-imgs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  background-color: #527158;
+  border-radius: 50%;
+  padding: 1rem 0;
 }
 
 /*============================
@@ -242,8 +256,6 @@ footer .copyright {
 
 .hero-area h1 {
   margin-bottom: 330px;
-  font-size: 2.25em;
-  font-weight: normal;
 }
 
 /*------Aside----*/
@@ -257,15 +269,6 @@ aside {
 
 aside .content-wrapper {
   width: 90%;
-}
-
-aside h3{
-  font-size: 1.125em;
-  font-weight: normal;
-}
-
-aside p{
-  font-size: 0.875em;
 }
 
 aside .form{
@@ -294,15 +297,6 @@ aside .form input{
   width: 90%;
 }
 
-.features h1{
-  font-size: 1.875rem;
-  font-weight: normal;
-}
-
-.features p{
-  font-size: 0.875rem;
-}
-
 .features .feature-items {
   display: flex;
   justify-content: center;
@@ -311,6 +305,20 @@ aside .form input{
   width: 55%;
   margin: 30px 80px;
   text-align: center;
+}
+
+.features-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3.125rem 0 2.1875rem 0;
+}
+
+.features-img img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
 }
 
 /*------Reviews--------*/
@@ -323,15 +331,6 @@ aside .form input{
 
 .reviews h3{
   font-size: 1.875em;
-}
-
-.reviews h4{
-  font-weight: normal;
-  font-size: 1.125em;
-}
-
-.reviews p{
-  font-size: 0.875em;
 }
 
 /*=======================
@@ -495,14 +494,33 @@ input[type=button] {
 
 @media only screen and (min-width: 768px) {
   /* ----------Base Header - Footer Styles---------*/
+  h1{
+    font-size: 3em;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  figure {
+
+  }
   /*Header Styles*/
-  header nav {
-    justify-content: flex-end;
+  header figure{
+    width: 50%;
+  }
+  header .content-wrapper {
+    flex-flow: row nowrap;
     width: 83%;
   }
 
-  header nav ul {
-    width: 20%;
+  .header-divide{
+    visibility: collapse;
+  }
+
+  header nav ul li {
+    margin: 0 2rem;
   }
   /*-------Footer Styles--------*/
   footer .content-wrapper{
@@ -525,13 +543,10 @@ input[type=button] {
     width: 49%;
   }
 
-  footer h4{
-    font-size: 1.5rem;
+  .social-imgs{
+    padding: 1.5rem 0;
   }
 
-  footer p{
-    font-size: 0.875rem;
-  }
 
   /*-------Hero Area-------*/
   .hero-area .content-wrapper {
@@ -539,7 +554,6 @@ input[type=button] {
   }
   .hero-area h1 {
     margin-bottom: 26.25rem;
-    font-size: 3rem;
   }
 
   /*------Aside----*/
@@ -557,10 +571,6 @@ input[type=button] {
 
   aside .form {
     width: 42%;
-  }
-
-  aside h3{
-    font-size: 1.5em;
   }
 
   /*-------Features-------*/
@@ -583,6 +593,10 @@ input[type=button] {
     margin: auto 2rem;
   }
 
+  .features-img img {
+    width: 50%;
+  }
+
 
   /*--------Reviews-------*/
   .reviews .content-wrapper {
@@ -594,10 +608,13 @@ input[type=button] {
     font-size: 2.25em;
   }
 
-  .reviews h4{
-    font-size: 1.5em;
+  .reviews figure{
+    width: 49%;
   }
 
+  .testimonials {
+    width: 49%;
+  }
   /*======================
   --------About Page--------
   ===========================*/
@@ -644,7 +661,23 @@ input[type=button] {
 
 @media only screen and (min-width: 1200px) {
   /* ----------Base Header - Footer Styles---------*/
+  /* General Styles */
+  h1{
+    font-size: 3.75rem;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.875rem;
+  }
+
+  figure {
+
+  }
   /*Header Styles*/
+
+
+
   header nav ul {
     width: 13%;
   }
@@ -655,38 +688,26 @@ input[type=button] {
   /*-------Footer Styles--------*/
   footer .contact {
     width: 27%;
+    margin: inherit 10rem;
   }
 
   footer .social {
     width: 20%;
+    margin: inherit 10rem;
   }
 
-  footer h4{
-    font-size: 1.875rem;
-  }
-
-  footer p{
-    font-size: 1rem;
+  .social-imgs{
+    padding: 1rem 0;
   }
 
   /*-------Hero Area-------*/
-  .hero-area h1 {
-    font-size: 3.75rem;
-  }
 
   /*------Aside----*/
-aside h3{
-    font-size: 1.875em;
-  }
-
-  aside p {
-    font-size: 1rem;
-  }
 
   /*-------Features-------*/
   .features .feature-items{
     margin: 0;
-    width: 83%;
+    width: 100%;
   }
 
   .features .feature-items-description {
@@ -700,6 +721,20 @@ aside h3{
 .features p {
   font-size: 1.125rem;
   margin: 2rem;
+}
+
+.features-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3.125rem 0 2.1875rem 0;
+}
+
+.features-img img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
 }
 
   /*--------Reviews-------*/
