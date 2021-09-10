@@ -670,6 +670,10 @@ input[type=button] {
     width: 45%;
   }
 
+  .map-container figure{
+    padding-bottom: 45%;
+  }
+
   .contact-section .content-wrapper h2 {
     width: 80%;
   }
@@ -812,6 +816,10 @@ input[type=button] {
   .mission-content p {
         width: 45%;
       }
+
+  .map-container figure{
+      padding-bottom: 37.5%;
+  }
 
   .contact-section .content-wrapper h2 {
         width: 80%;
